@@ -56,6 +56,7 @@ To support a new language or framework:
 
 | Profile | Language / Framework |
 |---------|----------------------|
-| `cpp-cmake`     | C++ / CMake |
-| `python-django` | Python / Django |
-| `go-stdlib`     | Go / standard library |
+| `cpp-cmake`      | C++ / CMake |
+| `python-django`  | Python / Django |
+| `python-fastapi` | Python / FastAPI |
+| `go-stdlib`      | Go / standard library |

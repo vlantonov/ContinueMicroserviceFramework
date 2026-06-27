@@ -5,9 +5,10 @@ tech-profile:
 
 <!--
 Available backend profiles for microservices:
-  - cpp-cmake     (C++ / CMake)
-  - python-django (Python / Django)
-  - go-stdlib     (Go / standard library)
+  - cpp-cmake      (C++ / CMake)
+  - python-django  (Python / Django)
+  - python-fastapi (Python / FastAPI)
+  - go-stdlib      (Go / standard library)
 
 Set the `backend` key above to the profile that matches this service.
 Each profile lives in `.claude/tech/{profile}/` with its own coding, tdd,

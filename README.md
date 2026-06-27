@@ -54,7 +54,7 @@ The framework is tech-agnostic across the supported microservice stacks. Set the
 
 | Concern | Available profiles |
 |---------|-------------------|
-| Backend | `cpp-cmake` · `python-django` · `go-stdlib` |
+| Backend | `cpp-cmake` · `python-django` · `python-fastapi` · `go-stdlib` |
 
 Profiles are independent. Each lives in `.claude/tech/{profile}/` with `coding.md`, `tdd.md`, `infrastructure.md`, and code templates. Adding a new profile (Rust, .NET, Node, JVM, etc.) means adding that directory; rules, agents, and skills resolve bindings dynamically through the single `backend` concern.
 
@@ -84,7 +84,7 @@ First run triggers the spec phase (`/interview` → `/story` → `/api-spec` →
 ├── agents/     red, green, refactor, coverage, test-review, test-runner, prompt-refactor
 ├── skills/     slash commands — /continue, /refactor, /test-coverage, /design-preview, ...
 ├── templates/  refactoring patterns, checklists, code scaffolds (tech-agnostic)
-└── tech/       cpp-cmake/, python-django/, go-stdlib/ — pluggable backend profiles
+└── tech/       cpp-cmake/, python-django/, python-fastapi/, go-stdlib/ — pluggable backend profiles
 ```
 
 Every AI decision traces back to a specific rule, checklist item, or template. Start with `CLAUDE.md` and `.claude/rules/workflow.md` to understand the loop; `.claude/skills/continue/SKILL.md` is the dispatcher.
